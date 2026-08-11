@@ -41,7 +41,7 @@ Default exclusions include `.git`, `node_modules`, `dist`, and `coverage`. The s
 
 ## Agent Skill
 
-The repository includes `skill/audit-agent-surface`, a Codex-compatible Skill that guides an agent through a read-only scan, finding triage, and a reviewable remediation plan. The Skill never authorizes automatic fixes or command execution.
+The repository includes `skill/audit-agent-surface`, a Codex-compatible Skill that guides an agent through a read-only scan, finding triage, and a reviewable remediation plan. The Skill does not execute target repository code or authorize automatic fixes.
 
 ## Security model
 
