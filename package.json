@@ -1,0 +1,34 @@
+{
+  "name": "agent-surface-auditor",
+  "version": "0.1.0",
+  "description": "Read-only static security checks for AI agent, Skill, plugin, MCP, and automation repositories.",
+  "type": "module",
+  "bin": {
+    "agent-surface-auditor": "./bin/agent-surface-auditor.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "scan:self": "node ./bin/agent-surface-auditor.js . --fail-on high"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ai-agent",
+    "security",
+    "static-analysis",
+    "skills",
+    "mcp"
+  ],
+  "license": "MIT"
+}

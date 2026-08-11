@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "src/rules.js",
+    "test/**",
+    "package-lock.json"
+  ],
+  "maxFileBytes": 1000000
+}
