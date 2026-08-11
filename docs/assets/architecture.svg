@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Surface Auditor architecture</title>
+  <desc id="desc">An untrusted repository passes through a read-only file walker and security rules to produce a reviewable report.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081221"/><stop offset="1" stop-color="#121a38"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#51d9ed"/><stop offset="1" stop-color="#9f83f7"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#7289b8"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.28"/></filter>
+  </defs>
+  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
+  <text x="600" y="48" text-anchor="middle" fill="#f4f8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">A review pipeline with a fixed trust boundary</text>
+
+  <g fill="none" stroke="#7289b8" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M286 174H328"/><path d="M566 174H608"/><path d="M846 174H888"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(48 91)">
+      <rect width="238" height="166" rx="18" fill="#16233a" stroke="#f9739b" stroke-opacity="0.75"/>
+      <circle cx="119" cy="48" r="24" fill="#3a1e38" stroke="#f9739b"/>
+      <path d="M119 34v18m0 10v2" stroke="#ff9ab8" stroke-width="5" stroke-linecap="round"/>
+      <text x="119" y="102" text-anchor="middle" fill="#fff2f7" font-size="17" font-weight="700">UNTRUSTED REPOSITORY</text>
+      <text x="119" y="129" text-anchor="middle" fill="#aebbd2" font-size="14">code · prompts · manifests</text>
+    </g>
+    <g transform="translate(328 91)">
+      <rect width="238" height="166" rx="18" fill="#132c40" stroke="#4ed9eb" stroke-opacity="0.75"/>
+      <circle cx="119" cy="48" r="24" fill="#12394a" stroke="#4ed9eb"/>
+      <path d="M107 41h24M107 49h24M107 57h16" stroke="#79edfa" stroke-width="4" stroke-linecap="round"/>
+      <text x="119" y="102" text-anchor="middle" fill="#edfdff" font-size="17" font-weight="700">READ-ONLY FILE WALKER</text>
+      <text x="119" y="129" text-anchor="middle" fill="#aebbd2" font-size="14">regular text files only</text>
+    </g>
+    <g transform="translate(608 91)">
+      <rect width="238" height="166" rx="18" fill="#211f47" stroke="#9e87f6" stroke-opacity="0.75"/>
+      <circle cx="119" cy="48" r="24" fill="#302965" stroke="#9e87f6"/>
+      <path d="m106 49 9 9 18-22" fill="none" stroke="#c5b7ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="119" y="102" text-anchor="middle" fill="#f6f3ff" font-size="17" font-weight="700">SECURITY RULES</text>
+      <text x="119" y="129" text-anchor="middle" fill="#aebbd2" font-size="14">text · package · Skill metadata</text>
+    </g>
+    <g transform="translate(888 91)">
+      <rect width="264" height="166" rx="18" fill="#153044" stroke="url(#line)" stroke-width="2"/>
+      <circle cx="132" cy="48" r="24" fill="#173c4e" stroke="#63dfef"/>
+      <path d="M120 39h24M120 48h24M120 57h16" stroke="#8ceef8" stroke-width="4" stroke-linecap="round"/>
+      <text x="132" y="102" text-anchor="middle" fill="#edfdff" font-size="17" font-weight="700">REVIEWABLE REPORT</text>
+      <text x="132" y="129" text-anchor="middle" fill="#aebbd2" font-size="14">text or JSON · stable exit codes</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="160" y="302" width="880" height="46" rx="23" fill="#101b31" stroke="#637ca8" stroke-opacity="0.55"/>
+    <text x="600" y="331" text-anchor="middle" fill="#9fb2d5" font-size="14" font-weight="700" letter-spacing="2">NO EXECUTION · NO INSTALLS · NO NETWORK · NO SYMLINK FOLLOWING</text>
+  </g>
+</svg>
