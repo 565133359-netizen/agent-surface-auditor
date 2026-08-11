@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative Agent Surface Auditor terminal report</title>
+  <desc id="desc">A synthetic fixture produces critical destructive command and high prompt injection findings.</desc>
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1324"/><stop offset="1" stop-color="#171735"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="570" rx="24" fill="#08101f"/>
+  <g filter="url(#shadow)">
+    <rect x="40" y="34" width="1120" height="500" rx="18" fill="url(#frame)" stroke="#304160"/>
+    <path d="M40 88h1120" stroke="#304160"/>
+  </g>
+  <circle cx="76" cy="61" r="7" fill="#ff6b7d"/><circle cx="100" cy="61" r="7" fill="#f7c65b"/><circle cx="124" cy="61" r="7" fill="#58d68d"/>
+  <text x="600" y="67" text-anchor="middle" fill="#7486a8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">synthetic fixture · illustrative output</text>
+
+  <g font-family="Cascadia Code, SFMono-Regular, Consolas, monospace" font-size="17">
+    <text x="72" y="126" fill="#77e3f1"><tspan fill="#9f87f6">$</tspan> node ./bin/agent-surface-auditor.js ./fixture --fail-on high</text>
+    <text x="72" y="162" fill="#f2f6ff" font-weight="700">Agent Surface Auditor</text>
+    <text x="72" y="192" fill="#a8b7d2">Scanned files: 4</text>
+    <text x="72" y="220" fill="#a8b7d2">Skipped large files: 0</text>
+    <text x="72" y="248" fill="#a8b7d2">Findings: <tspan fill="#ff7192">1 critical</tspan>, <tspan fill="#ffb26b">1 high</tspan>, 0 medium, 0 low</text>
+
+    <text x="72" y="294" fill="#ff7192" font-weight="700">[CRITICAL] shell.destructive-command</text>
+    <text x="72" y="322" fill="#dce5f5">scripts/cleanup.js:12</text>
+    <text x="72" y="350" fill="#a8b7d2">A recursive destructive filesystem operation is present.</text>
+    <text x="72" y="378" fill="#8495b5">Remediation: Constrain the target to a verified workspace path and require explicit confirmation.</text>
+
+    <text x="72" y="424" fill="#ffb26b" font-weight="700">[HIGH] prompt.instruction-override</text>
+    <text x="72" y="452" fill="#dce5f5">skill/SKILL.md:27</text>
+    <text x="72" y="480" fill="#a8b7d2">Instruction-override language may represent prompt injection content.</text>
+    <text x="72" y="508" fill="#8495b5">Remediation: Treat the content as untrusted data and preserve tool and policy instructions.</text>
+  </g>
+</svg>

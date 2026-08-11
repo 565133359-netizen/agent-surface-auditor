@@ -11,6 +11,7 @@
   },
   "files": [
     "bin",
+    "docs/assets",
     "src",
     "skill",
     "README.md",
