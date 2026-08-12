@@ -17,6 +17,7 @@
 
 <p align="center">
   <a href="#quick-start">Quick start</a> ·
+  <a href="#try-the-example">Example</a> ·
   <a href="#what-it-detects">Detection coverage</a> ·
   <a href="#security-model">Security model</a> ·
   <a href="skill/audit-agent-surface/SKILL.md">Codex Skill</a> ·
@@ -83,6 +84,16 @@ node ./bin/agent-surface-auditor.js .
 node ./bin/agent-surface-auditor.js ../another-agent --format json --fail-on high
 ```
 
+## Try the example
+
+Run a repository-shaped, safe example to verify the installation and exit-code contract:
+
+```bash
+npm run scan:example
+```
+
+The example is intentionally clean and contains no executable target code. It proves the command path works; it does not prove that an arbitrary agent repository is safe. See [`examples/README.md`](examples/README.md) for the direct JSON command and guidance for testing a real target.
+
 ### Exit codes
 
 | Code | Meaning |
@@ -131,6 +142,8 @@ This project uses conservative pattern matching. It can produce false positives 
 Version `0.1.0` is an early public release. The CLI, text and JSON reporters, configuration file, CI workflow, test fixtures, and Codex Skill are available for review. See [CHANGELOG.md](CHANGELOG.md) for the committed project history. Adoption and download figures are not inferred or claimed.
 
 Focused issues and pull requests are welcome. New rules require a fixture, expected severity, remediation guidance, and a false-positive discussion; see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+If you try the scanner on a public agent repository, use the [early adopter feedback template](.github/ISSUE_TEMPLATE/feedback.md) to report a useful finding, false positive, missed surface, or setup issue. Remove secrets and private paths before posting.
 
 ## License
 

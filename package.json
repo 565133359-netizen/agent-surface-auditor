@@ -12,6 +12,7 @@
   "files": [
     "bin",
     "docs/assets",
+    "examples",
     "src",
     "skill",
     "README.md",
@@ -20,7 +21,8 @@
   ],
   "scripts": {
     "test": "node --test",
-    "scan:self": "node ./bin/agent-surface-auditor.js . --fail-on high"
+    "scan:self": "node ./bin/agent-surface-auditor.js . --fail-on high",
+    "scan:example": "node ./bin/agent-surface-auditor.js ./examples/minimal-agent --fail-on high"
   },
   "engines": {
     "node": ">=20"
