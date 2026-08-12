@@ -15,6 +15,7 @@
     "src",
     "skill",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {

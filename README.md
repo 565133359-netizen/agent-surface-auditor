@@ -19,7 +19,8 @@
   <a href="#quick-start">Quick start</a> ·
   <a href="#what-it-detects">Detection coverage</a> ·
   <a href="#security-model">Security model</a> ·
-  <a href="skill/audit-agent-surface/SKILL.md">Codex Skill</a>
+  <a href="skill/audit-agent-surface/SKILL.md">Codex Skill</a> ·
+  <a href="CHANGELOG.md">Changelog</a>
 </p>
 
 Agent Surface Auditor is a dependency-free static analysis CLI for repositories that can influence an agent's shell, filesystem, network, credentials, prompts, package installation, or code execution. It turns those surfaces into reviewable findings before the repository reaches an agent runtime or a contributor review queue.
@@ -127,7 +128,7 @@ This project uses conservative pattern matching. It can produce false positives 
 
 ## Project status
 
-Version `0.1.0` is an early public release. The CLI, text and JSON reporters, configuration file, CI workflow, test fixtures, and Codex Skill are available for review. Adoption and download figures are not inferred or claimed.
+Version `0.1.0` is an early public release. The CLI, text and JSON reporters, configuration file, CI workflow, test fixtures, and Codex Skill are available for review. See [CHANGELOG.md](CHANGELOG.md) for the committed project history. Adoption and download figures are not inferred or claimed.
 
 Focused issues and pull requests are welcome. New rules require a fixture, expected severity, remediation guidance, and a false-positive discussion; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
